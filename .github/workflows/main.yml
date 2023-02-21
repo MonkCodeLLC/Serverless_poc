@@ -5,7 +5,7 @@ name: Main workflow
 # run on every 1 min
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/5 * * * *'
 # get only main_poc folder from repo and run main.py after install dependencies also only fetch from prod branch
 jobs:
   build:
