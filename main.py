@@ -31,7 +31,7 @@ cur.execute("create table if not exists TABLE_CICD (id int primary key autoincre
 
 # insert data into table with id as auto increment
 
-cur.execute("insert into TABLE_CICD (id, status, current_ts) values ( SEQ_CICD.NEXTVAL, 'DATA_LOADED', current_timestamp)")
+cur.execute("insert into TABLE_CICD (id, status, current_ts) values ( SEQ_CICD.NEXTVAL, 'DATA_LOADED_TO_TABLE', current_timestamp)")
 
 # Fetch the last inserted row
 res = cur.execute("select * from TABLE_CICD order by id desc limit 1").fetchall()
