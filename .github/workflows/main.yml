@@ -2,10 +2,10 @@
 
 name: Main workflow
 
-# run on every 2 hours
+# run on every 1 min
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '*/1 * * * *'
 # get only main_poc folder from repo and run main.py after install dependencies also only fetch from prod branch
 jobs:
   build:
