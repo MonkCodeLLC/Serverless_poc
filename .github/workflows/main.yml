@@ -20,7 +20,7 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
-          pip install -r main_poc/requirements.txt
+          pip install -r main_poc/requirement.txt
           
       - name: execute py script # run main.py
         run: python3 main_poc/main.py
